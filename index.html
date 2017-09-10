@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var x, y;
+
+            function setValue()
+            {
+                x = Number(document.getElementById("x").value);
+                y = Number(document.getElementById("y").value);
+            }
+
+            function plus()
+            {
+                setValue();
+                result = x + y;
+                alert("Result is: " + result);
+            }
+
+            function minus()
+            {
+                setValue();
+                result = x - y;
+                alert("Result is: " + result);
+            }
+
+            function multiply()
+            {
+                setValue();
+                result = x * y;
+                alert("Result is: " + result);
+            }
+
+            function divide()
+            {
+                setValue();
+                result = x / y;
+                alert("Result is: " + result);
+            }
+
+            function power2()
+            {
+                setValue();
+                result = x * x;
+                alert("Result is: "+ result);
+            }
+
+            function powery()
+            {
+                setValue();
+                result = Math.pow(x, y);               
+                alert("Result is: "+ result);
+            }
+
+            function squareroot()
+            {
+                setValue();      
+                result = Math.sqrt(x);
+                alert("Result is: "+ result);
+            }
+            function cmtToInch()
+            {
+                setValue();
+                result = x * 0.39370;
+                alert("Result is: " + result);
+            }
+
+            function kbTotb()
+            {
+                setValue();
+                result = x * (Math.pow(10, -9));
+                alert("Result is: " + result.toFixed(10));
+            }
+            
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <input id="x" type="text"/>
+            <input id="y" type="text"/>
+            <input type="button" onclick="plus()" value="plus"/>
+            <input type="button" onclick="minus()" value="minus"/>
+            <input type="button" onclick="multiply()" value="multiply"/>
+            <input type="button" onclick="divide()" value="divide"/>
+            <input type="button" onclick="power2()" value="power2"/>
+            <input type="button" onclick="powery()" value="powery"/>
+            <input type="button" onclick="squareroot()" value="squareroot"/>
+            <input type="button" onclick="cmtToInch()" value="cmtToInch"/>
+            <input type="button" onclick="kbTotb()" value="kbTotb"/>
+        </div>
+    </body>
+</html>
